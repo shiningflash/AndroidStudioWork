@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".UserProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#21327E">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Profile"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:text="logout"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:background="#FFC107"
+            android:layout_marginLeft="150dp"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="80dp"
+        android:layout_marginHorizontal="40dp">
+
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="22sp"
+            android:textColor="#050000"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/student_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#050000"/>
+
+        <TextView
+            android:id="@+id/department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#050000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="190dp"
+        android:layout_marginHorizontal="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Information:"
+            android:textSize="20sp"
+            android:textColor="#050000"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/email_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#050000"/>
+
+        <TextView
+            android:id="@+id/phone_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#050000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginVertical="310dp"
+        android:layout_marginHorizontal="20dp">
+
+        <Button
+            android:id="@+id/message_button"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="7dp"
+            android:text="Message"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@color/login_button"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:id="@+id/consultation_button"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="7dp"
+            android:text="Consultation"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@color/register_button"
+            android:textColor="#FFFFFF"
+            android:layout_margin="5dp"
+            />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/consultation_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="380dp"
+        android:layout_marginHorizontal="10dp">
+
+        <TableRow>
+            <TextView
+                android:text="Time/Day"
+                style="@style/TableHeader1"
+                android:layout_weight="2"
+                android:background="#3F51B5"/>
+
+            <TextView
+                android:text="sat"
+                style="@style/TableHeader1"/>
+
+            <TextView
+                android:text="sun"
+                style="@style/TableHeader1"/>
+
+            <TextView
+                android:text="mon"
+                style="@style/TableHeader1"/>
+
+            <TextView
+                android:text="tue"
+                style="@style/TableHeader1"/>
+
+            <TextView
+                android:text="wed"
+                style="@style/TableHeader1"/>
+
+            <TextView
+                android:text="thu"
+                style="@style/TableHeader1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="08:00 - 09:20"
+                android:layout_weight="2"
+                style="@style/TableHeader" />
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="09:30 - 11:00"
+                android:layout_weight="2"
+                style="@style/TableHeader1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="11:00 - 12:20"
+                android:layout_weight="2"
+                style="@style/TableHeader"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="12:30 - 02:00"
+                android:layout_weight="2"
+                style="@style/TableHeader1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="02:00 - 03:20"
+                android:layout_weight="2"
+                style="@style/TableHeader"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="03:30 - 05:00"
+                android:layout_weight="2"
+                style="@style/TableHeader1"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+
+            <TextView
+                android:text=""
+                style="@style/TableValue"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
