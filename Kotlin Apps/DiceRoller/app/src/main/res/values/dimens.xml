@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_padding">5dp</dimen>
+    <dimen name="title_text_size">18sp</dimen>
+    <string name="gravity_center_horizontal">center_horizontal</string>
+    <string name="title_text">bold</string>
+</resources>

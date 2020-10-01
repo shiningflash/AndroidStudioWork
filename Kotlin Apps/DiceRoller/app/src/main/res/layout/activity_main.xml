@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="myName"
+            type="com.example.diceroller.MyName" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:text="@string/dice_roller_game"
+            android:textStyle="bold"
+            style="@style/title_style" />
+
+        <LinearLayout
+            android:id="@+id/nickname_ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/nickname_et"
+                android:hint="@string/enter_nickname"
+                android:inputType="textPersonName"
+                style="@style/common_text_style" />
+
+            <Button
+                android:id="@+id/nickname_btn"
+                style="@style/common_text_style"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#03A9F4"
+                android:textColor="@color/white"
+                android:text="@string/button" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nickname_tv"
+            style="@style/common_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={myName.nickname}"
+            android:textSize="@dimen/title_text_size"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/nickname_ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/dice_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/empty_dice"
+                tools:src="@drawable/dice_1"
+                android:contentDescription="@string/todo" />
+
+            <Button
+                android:id="@+id/roll_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="@string/roll"
+                style="@style/button_style" />
+
+            <TextView
+                android:id="@+id/result_tv"
+                style="@style/common_text_style"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>
