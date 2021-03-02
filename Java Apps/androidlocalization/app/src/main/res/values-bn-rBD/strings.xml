@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Language</string>
+    <string name="language">ভাষা</string>
+    <string name="select_language">ভাষা নির্বাচন করুন</string>
+    <string name="screen_two_text">স্বাগতম</string>
+    <string name="enter_name">আপনার নাম লিখুন</string>
+    <string name="play">খেলা শুরু করুন</string>
+    <string name="title">চোর পুলিশ খেলা</string>
+</resources>

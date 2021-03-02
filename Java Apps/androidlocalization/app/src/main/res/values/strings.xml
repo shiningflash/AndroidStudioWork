@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Language</string>
+    <string name="language">Language</string>
+    <string name="select_language">Select Language</string>
+    <string name="screen_two_text">Welcome</string>
+    <string name="enter_name">Enter Your Name</string>
+    <string name="play">PLAY</string>
+    <string name="title">Thief Police Game</string>
+</resources>
